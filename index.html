@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Functions 1</title>
+    <style>
+        input {
+            font-size: 2em;
+            margin: 10px 1px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p></p>
+
+    <script>
+        const para = document.querySelector('p');
+
+        let names = ['Chris', 'Li Kang', 'Anne', 'Francesca', 'Mustafa', 'Tina', 'Bert', 'Jada']
+        let name = chooseName(names);
+        para.textContent = name;
+
+        function chooseName(array) {
+            let index = random(8);
+            return names[index];
+        }
+
+        function random(max) {
+            return Math.floor(Math.random() * Math.floor(max));
+        }
+
+    </script>
+
+</body>
+
+</html>
